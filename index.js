@@ -18,8 +18,8 @@ app.use(express.static(__dirname))
 app.post('/palindromechecker',(req, res) => {
   const str = req.body.str
   const answer = isPalindrome(str) 
-//   res.send({message:answer})
-  res.send({message:str})
+  res.send({message:answer})
+//   res.send({message:str})
 })
 
 module.exports = app;
